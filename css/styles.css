@@ -195,6 +195,7 @@ button {
         display: flex;
         flex-direction: column;
         box-shadow: none;
+        padding: 10px;
     }
 
     .container-04,
