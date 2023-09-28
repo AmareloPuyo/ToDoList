@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/img/fundo.jpg');
+    background-size: cover;
+    background-repeat: no repeat;
+    color: #501511;
+    font-size: 1.2em;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main ,
+.edit-task{
+    background-color: #fdfdfd;
+    width: 600px;
+    min-height: min-content;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    border-radius: 10px;
+    margin: 40px auto;
+    box-shadow: 1px 1px 3px #5015114b;
+}
+
+input {
+    width: 80%;
+    height: 28px;
+    padding-left: 10px;
+}
+
+label {
+    font-weight: 600;
+}
+
+button {
+    height: 28px;
+    width: 30px;
+    background-color: #fdfdfd;
+    border: 3px solid #501511;
+}
+
+.container-01,
+.container-02,
+.container-03,
+.container-04,
+.container-05,
+.edit-01,
+.edit-02,
+.edit-03,
+.edit-04,
+.edit-05 {
+    border-bottom: 1px solid #50151186;
+    padding: 20px;
+    line-height: 2em;
+}
+
+.container-01,
+.edit-01 {
+    text-align: center;
+    padding: 20px 0;
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+}
+
+.container-02,
+.edit-02 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.container-03,
+.edit-03 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.container-04,
+.edit-04 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.container-05,
+.edit-05 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.container-06,
+.edit-06 {
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;
+}
+
+.ativo {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    padding: 20px;
+    border-top: 1px solid #fdfdfd;
+    border-bottom: 1px solid #fdfdfd;
+    border-bottom: 1px solid #50151186;
+}
+
+.ativo:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+.tarefa {
+    max-width: 60%;
+    word-wrap: break-word;
+}
+
+.buttons i,
+#filtro {
+    font-size: .8em;
+    border: 1px solid #501511;
+    padding: 3px 6px;
+    cursor: pointer;
+    background-color: #fdfdfd;
+}
+
+.buttons i:hover {
+    background-color: #501511;
+    color: #fdfdfd;
+}
+
+.completa {
+    background-color: #501511;
+}
+.completa span i{
+    border: 1px solid #fdfdfd;
+}
+
+.completa p {
+    color: white;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.completa i:hover {
+    border: 1px solid #fdfdfd;
+}
+#btn-cancelar{
+    background-color: #501511;
+    color: #fdfdfd;
+    border: 3px solid #501511;
+    font-weight: 600;
+    width: 100px;
+    padding: 0;
+    margin-top: 20px;
+    border-radius: 3px ;
+}
+#btn-cancelar:hover{
+    opacity: 0.8;
+}
+.edit-task{
+    display: none;
+}
+.none{
+    display: none;
+} 
+.grid{
+    display: grid;
+}
