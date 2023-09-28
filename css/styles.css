@@ -18,8 +18,8 @@ body {
     justify-content: center;
 }
 
-main ,
-.edit-task{
+main,
+.edit-task {
     background-color: #fdfdfd;
     width: 600px;
     min-height: min-content;
@@ -137,7 +137,8 @@ button {
 .completa {
     background-color: #501511;
 }
-.completa span i{
+
+.completa span i {
     border: 1px solid #fdfdfd;
 }
 
@@ -150,7 +151,8 @@ button {
 .completa i:hover {
     border: 1px solid #fdfdfd;
 }
-#btn-cancelar{
+
+#btn-cancelar {
     background-color: #501511;
     color: #fdfdfd;
     border: 3px solid #501511;
@@ -158,17 +160,73 @@ button {
     width: 100px;
     padding: 0;
     margin-top: 20px;
-    border-radius: 3px ;
+    border-radius: 3px;
 }
-#btn-cancelar:hover{
+
+#btn-cancelar:hover {
     opacity: 0.8;
 }
-.edit-task{
+
+.edit-task {
+    display: grid;
+}
+
+.none {
     display: none;
 }
-.none{
-    display: none;
-} 
-.grid{
+
+.grid {
     display: grid;
+}
+
+@media (max-width:480px) {
+
+    body {
+        background-color: #501511;
+        background-image: none;
+        align-items: flex-start;
+
+    }
+
+    main,
+    .edit-task {
+        background-color: #501511;
+        min-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .container-04,
+    .edit-04 {
+        display: none;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .container-01,
+    .container-02,
+    .container-03,
+    .container-04,
+    .container-05,
+    .edit-01,
+    .edit-02,
+    .edit-03,
+    .edit-04,
+    .edit-05 {
+        background-color: #fdfdfd;
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+    .ativo{
+        margin-top: 5px;
+        background-color: #fdfdfd;
+        
+    }
+    .completa {
+        border: 1px solid #fdfdfd;
+        background-color: #501511;
+    }
 }

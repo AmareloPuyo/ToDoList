@@ -145,7 +145,7 @@ const editaTarefaTAG = (div) => {
 
 const telaUpdate = ()=>{
     main.classList.toggle("none")
-    editContainer.classList.toggle("grid")
+    editContainer.classList.toggle("none")
 
 }
 
