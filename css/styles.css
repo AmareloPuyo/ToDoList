@@ -218,8 +218,13 @@ button {
     .edit-05 {
         background-color: #fdfdfd;
         margin: 10px 0;
-        border-radius: 5px;
+        border-radius: none;
     }
+    .container-01,
+    .edit-01{
+        border-radius: 5px 5px 0 0;
+    }
+
     .ativo{
         margin-top: 5px;
         background-color: #fdfdfd;
