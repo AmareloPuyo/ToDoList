@@ -182,21 +182,15 @@ button {
 @media (max-width:480px) {
 
     body {
-        background-color: #501511;
-        background-image: none;
-        align-items: flex-start;
+        align-items: conter;
 
     }
 
     main,
     .edit-task {
-        background-color: #501511;
-        min-width: 100vw;
         display: flex;
         flex-direction: column;
-        box-shadow: none;
-        padding: 10px;
-        margin: 0;
+        width: 96%;
     }
 
     .container-04,
