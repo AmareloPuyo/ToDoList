@@ -217,6 +217,7 @@ button {
         background-color: #fdfdfd;
         margin-bottom: 3px;
         border-radius: none;
+        padding: 10px;
     }
     .container-01,
     .edit-01{
