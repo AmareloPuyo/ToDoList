@@ -12,7 +12,7 @@ body {
     background-repeat: no repeat;
     color: #501511;
     font-size: 1.2em;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
