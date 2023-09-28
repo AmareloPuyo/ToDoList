@@ -70,7 +70,7 @@ btnCancelar.addEventListener("click", (e)=>{
     e.preventDefault()
     window.location.reload()
 })
-filtro.addEventListener("click", () => {
+filtro.addEventListener("change", () => {
     const listaContainer = document.querySelectorAll(".ativo");
     listaContainer.forEach((lista) => {
         switch (filtro.value) {
